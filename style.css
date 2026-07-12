@@ -1,3 +1,14 @@
+:root{
+    --primary-color: yellow;
+    --secondary-color: #0d6efd;
+    --text-color: black;
+    --white-color: white;
+    --hover-color: skyblue;
+    --green-color:green;
+    --red-color:red;
+    --grey-color:grey;
+    --sky-color:skyblue;
+}
 *{
     margin:0;
     padding:0;
@@ -14,7 +25,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:8px 20px;
-    background-color:yellow;
+    background-color:var(--primary-color);
    margin-top: 15;
 }
 
@@ -39,7 +50,7 @@ ul li{
 
 ul li a{
     text-decoration:none;
-    color:black;
+    color:var(--text-color);
     font-size:18px;
 }
 
@@ -65,55 +76,55 @@ h1{
 .box{
     width:250px;
     height:250px;
-    border:3px solid black;
+    border:3px var(--text-color);
     border-radius:20px;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:22px;
-    color:white;
+    color:var(--white-color);
 }
 
 .box1{
-    background-color:#3498db;
+    background-color:var(--secondary-color);
 }
 
 .box2{
-    background-color:#2ecc71;
+    background-color:var(--green-color);
 }
 
 .box3{
-    background-color:#e74c3c;
+    background-color:var(--red-color);
 }
 table{
     width:80%;
     margin:0 auto 40px auto;
     border-collapse:collapse;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 10px var(--grey-color);
 }
 th, td{
-    border:1px solid black;
+    border:1px solid:var(--text-color);
     padding:10px;
     text-align:center;
 }
 th{
-    background-color:#0d6efd;
-    color:white;
+    background-color:var(--secondary-color);
+    color:var(--white-color);
     font-size:18px;
     padding:15px;
     text-transform:uppercase;
     letter-spacing:1px;
 }
 tr:nth-child(even){
-    background-color:#f9f9f9;
+    background-color:var(--white-color);
 }
 tr:hover{
-    background-color:#f1f1f1;
+    background-color:var(--white-color);
 }
 td:hover{
-    background-color:skyblue;
-    color:black;
-     box-shadow:0px 0px 10px grey;
+    background-color:var(--sky-color);
+    color:var(--text-color);
+     box-shadow:0px 0px 10px var(--grey-color);
     transition: 0.3s;
 }
 .login-box{
@@ -121,14 +132,14 @@ td:hover{
     height: auto;
     margin:40px auto;
     padding:30px;
-    border:2px solid black;
+    border:2px solid var(--text-color);
     border-radius:10px;
 }
 
 .input-box{
     display:flex;
     align-items:center;
-    border:1px solid black;
+    border:1px solid var(--text-color);
     border-radius:5px;
     padding:10px;
     margin-bottom:20px;
@@ -155,16 +166,16 @@ td:hover{
 .buttons button{
     width:48%;
     padding:10px;
-    background-color:blue;
-    color:white;
+    background-color:var(--secondary-color);
+    color:var(--white-color);
     border:none;
     border-radius:5px;
     cursor:pointer;
 }
 
 .buttons button:hover{
-    background-color:skyblue;
-    color:black;
+    background-color:var(--sky-color);
+    color:var(--text-color);
 }
 .login-box{
     width: 350px;
